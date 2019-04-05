@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using Xamarin.Forms;
 
 namespace App1
@@ -24,20 +20,46 @@ namespace App1
             bW = false;
             bH = false;
             btnBodyFatPage.IsEnabled = false;
+            GamePage2.IsEnabled = false;
+            GamePage3.IsEnabled = false;
             //show image on screen, chart.png
-            var assembly = typeof(MainPage);
-            string fileName = "App1.Assets.Images.chart.png";
-            chart.Source = ImageSource.FromResource(fileName, assembly);
+
+
+            //var assembly = typeof(MainPage);
+            //string fileName = "App1.Assets.Images.chart.png";
+            //chart.Source = ImageSource.FromResource(fileName, assembly);
         }
 
         private void btnCalculate_Clicked(object sender, EventArgs e)
         {
-            //calculate BMI for h/w entered by user
-            //include checks for h/w
-            double bmi;
-            bmi = (Convert.ToDouble(entWeight.Text) / (Convert.ToDouble(entHeight.Text) * Convert.ToDouble(entHeight.Text)));
-            lblAnswer.Text = "Your BMI is : " + bmi.ToString("0.00");
+            //this is to enable all the buttons after entering the info necessary
+            string bmi;
+            bmi = entHeight.Text;
+            lblAnswer.Text = "Hello " + bmi + "!";
             btnBodyFatPage.IsEnabled = true;
+            GamePage2.IsEnabled = true;
+            GamePage3.IsEnabled = true;
+        }
+
+        private void btnBodyFatPage_Clicked(object sender, EventArgs e)
+        {
+            //this is to navigate to the first game page
+
+            Navigation.PushAsync(new Page1());
+        }
+
+        private void GamePage2_Clicked(object sender, EventArgs e)
+        {
+            //this is to navigate to the second game page
+            Navigation.PushAsync(new Page2());
+
+        }
+
+        private void GamePage3_Clicked(object sender, EventArgs e)
+        {
+            //this is to navigate to the third game page
+            Navigation.PushAsync(new Page3());
+
         }
 
         private void entWeight_TextChanged(object sender, TextChangedEventArgs e)
@@ -45,7 +67,7 @@ namespace App1
             if (entWeight.Text == "")
             {
                 btnCalculate.IsEnabled = false;
-                lblAnswer.Text = "Your BMI is : ";
+                lblAnswer.Text = "Hello : ";
                 bW = false;
 
             }
@@ -78,12 +100,7 @@ namespace App1
             btnCalculate.IsEnabled = false;
         }
 
-        private void btnBodyFatPage_Clicked(object sender, EventArgs e)
-        {
-            //navigates to body fat page
-            
-            Navigation.PushAsync(new Page2());
-        }
+       
 
         private void entHeight_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -92,7 +109,7 @@ namespace App1
             if(entHeight.Text=="")
             {
                 btnCalculate.IsEnabled = false;
-                lblAnswer.Text = "Your BMI is : ";
+                lblAnswer.Text = "Hello : ";
                 bH = false;
 
             }
