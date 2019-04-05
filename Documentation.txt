@@ -2,3 +2,6 @@
 
 3rd April 20:30pm - Project Brief has been updated and new ideas for the project are going to be implemented. 
 
+5th April 23:22pm - Updated main page with 3 buttons that navigate to other game pages. Also adjusted UI so 
+that it relates to the project.
+
