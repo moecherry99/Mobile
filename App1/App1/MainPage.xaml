@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App1"
@@ -11,15 +11,15 @@
             <RowDefinition Height="Auto"/> 
         </Grid.RowDefinitions>
 
-        <Label x:Name="lblTitle" Text="Best BMI Calculator" 
+        <Label x:Name="lblTitle" Text="3 in 1 App" 
                HorizontalOptions="Center" Grid.Row="0" />
         
         <StackLayout x:Name="slUserEntry" Grid.Row="1">
             <StackLayout Orientation="Horizontal" 
                          HorizontalOptions="Center" 
                          Margin="0, 6, 0, 3">
-                <Label Text="Height (m)" Margin="2, 2, 2, 2"/>
-                <Entry Placeholder="Enter your height"
+                <Label Text="Name : " Margin="2, 2, 2, 2"/>
+                <Entry Placeholder="Enter your name"
                        x:Name="entHeight"   
                        Margin="2"
                        Keyboard="Numeric"
@@ -29,27 +29,34 @@
             <StackLayout Orientation="Horizontal" 
                          HorizontalOptions="Center" 
                          Margin="0, 3, 0, 3">
-                <Label Text="Weight (kg)" Margin="2, 2, 2, 2"/>
-                <Entry Placeholder="Enter your weight" Margin="2"
+                <Label Text="Age : " Margin="2, 2, 2, 2"/>
+                <Entry Placeholder="Enter your age" Margin="2"
                         x:Name="entWeight"
                         TextChanged="entWeight_TextChanged"/>
                         
             </StackLayout>
 
-            <Label x:Name="lblAnswer" Text="Your BMI is : "
+            <Label x:Name="lblAnswer" Text=""
                    HorizontalOptions="Center" Margin="0, 3, 0, 6"/>
             
         </StackLayout>
         <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
                      HorizontalOptions="Center"
-                     Orientation="Horizontal">
-        <Button x:Name="btnCalculate" Text="Calculate"
+                     Orientation="Vertical">
+        <Button x:Name="btnCalculate" Text="Enter Info"
                Margin="3, 2"
                Clicked="btnCalculate_Clicked" IsEnabled="False"/>
-        <Button x:Name="btnBodyFatPage" Text="Body Fat" 
+        <Button x:Name="btnBodyFatPage" Text="Game 1" 
                Clicked="btnBodyFatPage_Clicked" 
                Margin="3, 2"/>
+            <Button x:Name="GamePage2" Text="Game 2" 
+               Clicked="GamePage2_Clicked" 
+               Margin="3, 2"/>
+            <Button x:Name="GamePage3" Text="Game 3" 
+               Clicked="GamePage3_Clicked" 
+               Margin="3, 2"/>
         </StackLayout>
+        <!--
         <Image x:Name ="chart" HeightRequest="120" WidthRequest="120" Grid.Row="3"
                HorizontalOptions="Center" >
 
@@ -59,6 +66,7 @@
                 
             </Image.GestureRecognizers>
         </Image>
+        -->
     </Grid>
 
 </ContentPage>
