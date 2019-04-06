@@ -5,3 +5,6 @@
 5th April 23:22pm - Updated main page with 3 buttons that navigate to other game pages. Also adjusted UI so 
 that it relates to the project.
 
+6th April 23:02pm - Updated 1st game page to allow for a click counter. Tracks amount of clicks that have been 
+clicked. Working on getting 10 second timer to activate as first button is clicked.
+
