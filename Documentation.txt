@@ -8,3 +8,6 @@ that it relates to the project.
 6th April 23:02pm - Updated 1st game page to allow for a click counter. Tracks amount of clicks that have been 
 clicked. Working on getting 10 second timer to activate as first button is clicked.
 
+7th April 13:17pm - Allowed for some "error" handling. All of game 1's starter text is now set back to default 
+if the "Start Game 1" button is pressed. This means the counter does not hit over 20 at any given time.
+
