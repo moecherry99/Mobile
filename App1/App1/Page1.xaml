@@ -25,11 +25,18 @@
             <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
                      HorizontalOptions="Center"
                      Orientation="Vertical">
-            <Button x:Name="clickCounter" Text="Enter Info"
+            <Button x:Name="game1Starter" Text="Start Game 1"
                Margin="3, 2"
-               Clicked="ClickCounter_Clicked" IsEnabled="True"/>
+               Clicked="Game1Starter_Clicked" IsEnabled="True"/>
+            <Button x:Name="clickCounter" Text="Click Fast!"
+               Margin="3, 2"
+               Clicked="ClickCounter_Clicked" IsEnabled="False"/>
+                
             <Label x:Name="label1" Text="Times Clicked : " 
                HorizontalOptions="Center" Grid.Row="0" />
+            <Label x:Name="label2" Text="" 
+               HorizontalOptions="Center" Grid.Row="0" />
+            
         </StackLayout>
            
         </Grid>
