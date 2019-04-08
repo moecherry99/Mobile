@@ -11,3 +11,5 @@ clicked. Working on getting 10 second timer to activate as first button is click
 7th April 13:17pm - Allowed for some "error" handling. All of game 1's starter text is now set back to default 
 if the "Start Game 1" button is pressed. This means the counter does not hit over 20 at any given time.
 
+8th April 12:54pm - Updated full Readme.MD to show all of the games in the application. 
+
