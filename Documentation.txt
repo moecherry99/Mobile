@@ -13,3 +13,5 @@ if the "Start Game 1" button is pressed. This means the counter does not hit ove
 
 8th April 12:54pm - Updated full Readme.MD to show all of the games in the application. 
 
+10th April 20:24pm - Adding CSS to all files, researching ways to get header/style the text.
+
