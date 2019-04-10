@@ -3,3 +3,5 @@ This is the Research Links page and references as to where code was found to hel
 Click Counter helper - https://stackoverflow.com/questions/24011869/handling-a-buttons-click-event-in-xaml <- Stack Overflow error (3rd April 20:31pm)
 
 Click Counter YouTube video - https://www.youtube.com/watch?v=0gyySFnmZA8
+
+Timer App with Laps - https://www.c-sharpcorner.com/article/create-timer-task-application-in-xamarin-forms-using-visual-studio/
