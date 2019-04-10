@@ -5,3 +5,5 @@ Click Counter helper - https://stackoverflow.com/questions/24011869/handling-a-b
 Click Counter YouTube video - https://www.youtube.com/watch?v=0gyySFnmZA8
 
 Timer App with Laps - https://www.c-sharpcorner.com/article/create-timer-task-application-in-xamarin-forms-using-visual-studio/
+
+CSS links - https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/css/
