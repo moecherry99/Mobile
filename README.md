@@ -2,8 +2,9 @@
 
 This project has been transferred from another repository as there has been some major changes.
 
-The project is a 3 in 1 game app, where the user can pick which game they would like to go to and 
-play! It is based on speed, accuracy and reflexes.
+The project is a 3 in 1 game app, where the user can pick which game they would like to go to and play! It is based on speed, accuracy and reflexes.
+
+The target audience for this application is older people looking for brain training exercises or younger people who are just killing time between study sessions.
 
 The first page allows you to input your name and age and if the age is below 18 you will not be allowed to play. It also has 3 buttons to go to which game you would like to play.
 
