@@ -9,3 +9,5 @@ Timer App with Laps - https://www.c-sharpcorner.com/article/create-timer-task-ap
 CSS links - https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/css/
 
 Successful timer - https://forums.xamarin.com/discussion/90177/timer-class-in-xamarin-forms
+
+Text confirmation link helper - https://stackoverflow.com/questions/34988044/validating-label-content-equal-to-null-or-string-empty
