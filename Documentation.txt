@@ -15,3 +15,6 @@ if the "Start Game 1" button is pressed. This means the counter does not hit ove
 
 10th April 20:24pm - Adding CSS to all files, researching ways to get header/style the text.
 
+14th April 16:13pm - Got random strings working for game page 2. Working on how to get text to match given text 
+and confirm that this has happened.
+
