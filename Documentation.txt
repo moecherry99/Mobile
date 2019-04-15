@@ -18,3 +18,6 @@ if the "Start Game 1" button is pressed. This means the counter does not hit ove
 14th April 16:13pm - Got random strings working for game page 2. Working on how to get text to match given text 
 and confirm that this has happened.
 
+15th April 22:21pm - Created if checkers for 2nd game page, all if statements working and text is confirmed to 
+be right or wrong when button is clicked.
+
