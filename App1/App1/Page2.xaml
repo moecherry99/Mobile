@@ -19,14 +19,20 @@
             <Button x:Name="game2Starter" Text="Start Game 2"
                Margin="3, 2"
                Clicked="Game2Starter_Clicked" IsEnabled="True"/>
+            
             <Label x:Name="textToEnter" Text="Text to enter : " 
                HorizontalOptions="Center" />
 
             <Entry Placeholder="Enter text here" x:Name="entText" 
                TextChanged="EntText_TextChanged"/>
+      
+            <Button x:Name="gameConfirm" Text="Confirm Text!"
+               Margin="3, 2" IsEnabled="True"
+                    Clicked="GameConfirm_Clicked"/>
 
             <Label x:Name="ifChecker" Text="" 
                HorizontalOptions="Center" />
+
         </StackLayout>
     </Grid>
 </ContentPage>
