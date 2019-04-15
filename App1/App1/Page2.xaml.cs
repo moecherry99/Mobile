@@ -33,7 +33,9 @@ namespace App1
             
             if(entText.ToString()==textToEnter.ToString())
             {
-                //ifChecker.Text = "You took "+seconds+"to type"+textToEnter.ToString();
+                gameConfirm.IsEnabled = true;
+                
+                
             }
         }
 
@@ -43,6 +45,18 @@ namespace App1
             entText.IsEnabled = true;
             textToEnter.Text = text[new Random().Next(0, text.Length)];
 
+        }
+
+        private void GameConfirm_Clicked(object sender, EventArgs e)
+        {
+            if (entText.Text == textToEnter.Text)
+            {
+                ifChecker.Text = "It is correct!";
+            }
+            else
+            {
+                ifChecker.Text = "It is not correct!";
+            }
         }
     }
 
