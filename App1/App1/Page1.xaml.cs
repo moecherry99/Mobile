@@ -82,6 +82,13 @@ namespace App1
         {
             Navigation.PushAsync(new MainPage());
         }
+
+        private void Game1Rules_Clicked(object sender, EventArgs e)
+        {
+            //this is to navigate to the second game page
+            Navigation.PushAsync(new Game1Rules());
+
+        }
     }
 
 }
