@@ -23,9 +23,14 @@ namespace App1
             
         }
 
-       
+        private void Game3Rules_Clicked(object sender, EventArgs e)
+        {
+            //this is to navigate to the second game page
+            Navigation.PushAsync(new Game3Rules());
 
-        
+        }
+
+
 
         private void startButton_Clicked(object sender, EventArgs e)
         {
@@ -53,6 +58,7 @@ namespace App1
             startButton.IsVisible = true;
         }
 
+       
     }
 
 }
