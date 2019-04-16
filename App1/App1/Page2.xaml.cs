@@ -58,6 +58,13 @@ namespace App1
                 ifChecker.Text = "It is not correct!";
             }
         }
+
+        private void Game2Rules_Clicked(object sender, EventArgs e)
+        {
+            //this is to navigate to the second game page
+            Navigation.PushAsync(new Game2Rules());
+
+        }
     }
 
 }
