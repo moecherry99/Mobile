@@ -11,7 +11,7 @@ namespace App1
         {
             InitializeComponent();
             SetupDefaults();
-            
+
         }
 
         private void SetupDefaults()
@@ -64,6 +64,7 @@ namespace App1
 
         private void entWeight_TextChanged(object sender, TextChangedEventArgs e)
         {
+            //check entry boxes are full
             if (entWeight.Text == "")
             {
                 btnCalculate.IsEnabled = false;
@@ -94,19 +95,20 @@ namespace App1
 
         private void ResetFieldsGeneral()
         {
+            //if values are taken out of the text boxes, the buttons do not stay active
             bW = bH = false;
             entHeight.Text = "";
             entWeight.Text = "";
             btnCalculate.IsEnabled = false;
         }
 
-       
+
 
         private void entHeight_TextChanged(object sender, TextChangedEventArgs e)
         {
 
             //check entry boxes are full
-            if(entHeight.Text=="")
+            if (entHeight.Text == "")
             {
                 btnCalculate.IsEnabled = false;
                 lblAnswer.Text = "Hello : ";
@@ -127,11 +129,11 @@ namespace App1
                 if (bW == true) btnCalculate.IsEnabled = true;
 
             }
-            
+
 
         }
     }
-   
+
 
 
 
