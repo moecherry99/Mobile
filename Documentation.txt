@@ -21,3 +21,6 @@ and confirm that this has happened.
 15th April 22:21pm - Created if checkers for 2nd game page, all if statements working and text is confirmed to 
 be right or wrong when button is clicked.
 
+16th April 15:27pm - Updated the Page 3 games UI. Currently creating a suitable UI and adding "Rules" buttons 
+to each game page 1/2/3 to give explanations on how to play during game.
+
