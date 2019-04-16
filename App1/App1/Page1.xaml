@@ -2,27 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Page1">
-    
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+    <ContentPage.Resources>
+        <StyleSheet>
 
-            <Label x:Name="lblTitle" Text="Click Counter Game!" 
+        ^contentpage 
+        {  
+            background-color: white;  
+        }
+        #lblTitle
+        {
+            font-family: Consolas;
+            font-style: bold;
+            font-size: medium;
+        }
+            
+        </StyleSheet>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lblTitle" Text="Speed Game!" 
                HorizontalOptions="Center" Grid.Row="0" />
 
-            <StackLayout x:Name="slUserEntry" Grid.Row="1">
+        <StackLayout x:Name="slUserEntry" Grid.Row="1">
             <StackLayout Orientation="Vertical" 
                          HorizontalOptions="Center" 
                          Margin="0, 6, 0, 3">
 
             </StackLayout>
-            
 
-            </StackLayout>
-            <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
+
+        </StackLayout>
+        <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
                      HorizontalOptions="Center"
                      Orientation="Vertical">
             <Button x:Name="game1Starter" Text="Start Game 1"
@@ -31,13 +46,21 @@
             <Button x:Name="clickCounter" Text="Click Fast!"
                Margin="3, 2"
                Clicked="ClickCounter_Clicked" IsEnabled="False"/>
-                
+
             <Label x:Name="label1" Text="Times Clicked : " 
-               HorizontalOptions="Center" Grid.Row="0" />
+               HorizontalOptions="Center"  />
             <Label x:Name="label2" Text="" 
-               HorizontalOptions="Center" Grid.Row="0" />
-            
+               HorizontalOptions="Center"  />
+            <Button x:Name="homePage" Text="Home"
+               Margin="3, 2" VerticalOptions="End"
+               Clicked="homePage_Clicked" IsEnabled="True"/>
         </StackLayout>
-           
-        </Grid>
+        
+        
+        <!-- Display Rules for Game 1 -->
+        <Button x:Name="game1Rules" Text="Rules"
+               Margin="10, 10, 10, 10" HorizontalOptions="End" VerticalOptions="Start"
+               Clicked="Game1Rules_Clicked" IsEnabled="True"/>
+
+    </Grid>
 </ContentPage>
