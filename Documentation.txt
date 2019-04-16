@@ -24,3 +24,6 @@ be right or wrong when button is clicked.
 16th April 15:27pm - Updated the Page 3 games UI. Currently creating a suitable UI and adding "Rules" buttons 
 to each game page 1/2/3 to give explanations on how to play during game.
 
+16th April 15:53pm - Found stopwatch helper on StackOverflow, very useful and helped a lot with game page 3 
+functionality. Continuing on UI for Game 3 and the "Rules" buttons. Wiki will be created/updated tomorrow.
+
