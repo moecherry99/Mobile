@@ -29,31 +29,35 @@
                HorizontalOptions="Center" Grid.Row="0" />
 
         <StackLayout x:Name="slUserEntry" Grid.Row="1">
+            
             <StackLayout Orientation="Vertical" 
                          HorizontalOptions="Center" 
                          Margin="0, 6, 0, 3">
 
             </StackLayout>
 
-
         </StackLayout>
+        
         <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
                      HorizontalOptions="Center"
                      Orientation="Vertical">
+            
             <Button x:Name="game1Starter" Text="Start Game 1"
                Margin="3, 2"
-               Clicked="Game1Starter_Clicked" IsEnabled="True"/>
+               Clicked="Game1Starter_Clicked" IsEnabled="True" />
+            
             <Button x:Name="clickCounter" Text="Click Fast!"
                Margin="3, 2"
-               Clicked="ClickCounter_Clicked" IsEnabled="False"/>
+               Clicked="ClickCounter_Clicked" IsEnabled="False" />
 
             <Label x:Name="label1" Text="Times Clicked : " 
-               HorizontalOptions="Center"  />
+               HorizontalOptions="Center" />
+            
             <Label x:Name="label2" Text="" 
-               HorizontalOptions="Center"  />
-            <Button x:Name="homePage" Text="Home"
-               Margin="3, 2" VerticalOptions="End"
-               Clicked="homePage_Clicked" IsEnabled="True"/>
+               HorizontalOptions="Center" />
+
+            <Label x:Name="label3" Text="" 
+               HorizontalOptions="Center" />
         </StackLayout>
         
         
