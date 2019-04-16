@@ -3,17 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App1"
              x:Class="App1.MainPage">
+    <ContentPage.Resources>
+        <StyleSheet>
+
+            ^contentpage {  
+       background-color: white;  
+     }  
+   
+     #lblTitle {
+            font-family: Consolas;
+            font-style: bold;
+            font-size: medium;
+     }
+        </StyleSheet>
+    </ContentPage.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/> 
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Label x:Name="lblTitle" Text="3 in 1 App" 
                HorizontalOptions="Center" Grid.Row="0" />
-        
+
         <StackLayout x:Name="slUserEntry" Grid.Row="1">
             <StackLayout Orientation="Horizontal" 
                          HorizontalOptions="Center" 
@@ -33,20 +47,20 @@
                 <Entry Placeholder="Enter your age" Margin="2"
                         x:Name="entWeight"
                         TextChanged="entWeight_TextChanged"/>
-                        
+
             </StackLayout>
 
             <Label x:Name="lblAnswer" Text=""
                    HorizontalOptions="Center" Margin="0, 3, 0, 6"/>
-            
+
         </StackLayout>
         <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
                      HorizontalOptions="Center"
                      Orientation="Vertical">
-        <Button x:Name="btnCalculate" Text="Enter Info"
+            <Button x:Name="btnCalculate" Text="Enter Info"
                Margin="3, 2"
                Clicked="btnCalculate_Clicked" IsEnabled="False"/>
-        <Button x:Name="btnBodyFatPage" Text="Game 1" 
+            <Button x:Name="btnBodyFatPage" Text="Game 1" 
                Clicked="btnBodyFatPage_Clicked" 
                Margin="3, 2"/>
             <Button x:Name="GamePage2" Text="Game 2" 
