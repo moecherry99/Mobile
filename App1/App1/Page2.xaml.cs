@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace App1
 {
     public partial class Page2 : ContentPage
     {
-       
+        Stopwatch mStopWatch = new Stopwatch();
 
         public Page2()
         {
@@ -19,11 +20,6 @@ namespace App1
         }
 
         private void SetupDefaults()
-        {
-
-        }
-
-        private void btnCalculate_Clicked(object sender, EventArgs e)
         {
 
         }
@@ -44,14 +40,21 @@ namespace App1
             string[] text = { "Android", "Apple", "Samsung", "Huawei", "Sony" };
             entText.IsEnabled = true;
             textToEnter.Text = text[new Random().Next(0, text.Length)];
-
+            gameConfirm.IsEnabled = true;
+            mStopWatch.Start();
         }
 
         private void GameConfirm_Clicked(object sender, EventArgs e)
         {
             if (entText.Text == textToEnter.Text)
             {
+                mStopWatch.Stop();
+                long elapsed = mStopWatch.ElapsedMilliseconds;
+                time.Text = elapsed.ToString();
+                mStopWatch.Reset();
                 ifChecker.Text = "It is correct!";
+                time.Text = "Time to enter string: "+time.Text+" milliseconds";
+                gameConfirm.IsEnabled = false;
             }
             else
             {
