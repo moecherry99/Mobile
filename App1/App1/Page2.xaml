@@ -5,17 +5,39 @@
     <ContentPage.Resources>
         <StyleSheet>
 
-            ^contentpage {  
-       background-color: white;  
-     }
+        ^contentpage 
+        {  
+            background-color: white;  
+        }
+        #lblTitle
+        {
+            font-family: Consolas;
+            font-style: bold;
+            font-size: medium;
+        }
 
         </StyleSheet>
     </ContentPage.Resources>
     <Grid>
-        <Label x:Name="lblTitle" Text="Game Page 2" 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Label x:Name="lblTitle" Text="Accuracy Game!" 
                  HorizontalOptions="Center" Grid.Row="0" />
-        <StackLayout x:Name="slUserEntry" Grid.Row="1"        
-                         HorizontalOptions="Center">
+
+        <StackLayout x:Name="slUserEntry" Grid.Row="1" >
+            <StackLayout Orientation="Vertical" 
+                         HorizontalOptions="Center" 
+                         Margin="0, 6, 0, 3">
+
+            </StackLayout>
+        </StackLayout>
+        <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
+                     HorizontalOptions="Center"
+                     Orientation="Vertical">
             <Button x:Name="game2Starter" Text="Start Game 2"
                Margin="3, 2"
                Clicked="Game2Starter_Clicked" IsEnabled="True"/>
@@ -34,5 +56,9 @@
                HorizontalOptions="Center" />
 
         </StackLayout>
+        
+        <Button x:Name="game2Rules" Text="Rules"
+               Margin="10, 10, 10, 10" HorizontalOptions="End" VerticalOptions="Start"
+               Clicked="Game2Rules_Clicked" IsEnabled="True"/>
     </Grid>
 </ContentPage>
