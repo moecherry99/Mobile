@@ -49,10 +49,13 @@
                TextChanged="EntText_TextChanged"/>
       
             <Button x:Name="gameConfirm" Text="Confirm Text!"
-               Margin="3, 2" IsEnabled="True"
+               Margin="3, 2" IsEnabled="False"
                     Clicked="GameConfirm_Clicked"/>
 
             <Label x:Name="ifChecker" Text="" 
+               HorizontalOptions="Center" />
+
+            <Label x:Name="time" Text="" 
                HorizontalOptions="Center" />
 
         </StackLayout>
