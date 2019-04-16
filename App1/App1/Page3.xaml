@@ -19,10 +19,21 @@
         </StyleSheet>
     </ContentPage.Resources>
     <Grid>
-        <Label x:Name="lblTitle" Text="Reflex Game!" 
-               HorizontalOptions="Center"/>
-
+        <StackLayout x:Name="layout" Grid.Row="1" Grid.Column="1"        
+                         HorizontalOptions="Center">
             
-        
+            <Label x:Name="lblTitle" Text="Reflex Game!" 
+               HorizontalOptions="Center"/>
+            
+            <Button x:Name="startButton" Text="Ready Up!"
+               Margin="3, 2"
+               Clicked="startButton_Clicked" IsEnabled="True"/>
+            <Button x:Name="stopButton" Text="Click Now!"
+               Margin="3, 2"
+               Clicked="stopButton_Clicked" IsEnabled="True"/>
+
+            <Label x:Name="statusText" Text="" 
+               HorizontalOptions="Center"/>
+        </StackLayout>
     </Grid>
 </ContentPage>
