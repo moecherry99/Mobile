@@ -28,5 +28,5 @@ to each game page 1/2/3 to give explanations on how to play during game.
 functionality. Continuing on UI for Game 3 and the "Rules" buttons. Wiki will be created/updated tomorrow.
 
 16th April 23:27pm - Fully integrated the timer into game page 2. All functionality working in each game page. 
-UI, Rules pages text and Wiki left to update for last day (17th April 23:59pm).
+UI, Rules pages text, ReadMe and Wiki left to update for last day (17th April 23:59pm).
 
