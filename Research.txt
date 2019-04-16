@@ -13,3 +13,5 @@ Successful timer - https://forums.xamarin.com/discussion/90177/timer-class-in-xa
 Text confirmation link helper - https://stackoverflow.com/questions/34988044/validating-label-content-equal-to-null-or-string-empty
 
 Random strings - https://stackoverflow.com/questions/6695187/pick-random-string-from-array
+
+Stopwatch link for game 2/3 - https://stackoverflow.com/questions/43031266/how-to-stop-a-stopwatch-with-a-button-click-in-xamarin
