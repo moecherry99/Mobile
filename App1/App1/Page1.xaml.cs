@@ -10,26 +10,23 @@ namespace App1
     public partial class Page1 : ContentPage
     {
 
-        private System.Timers.Timer buttonTimer;
-        int timer = 0;
-
+        //sets counter to 0
         int counter = 0;
 
         public Page1()
         {
             InitializeComponent();
             SetupDefaults();
-
-
         }
 
         private void SetupDefaults()
         {
 
-
         }
         private void Game1Starter_Clicked(object sender, EventArgs e)
         {
+
+            //make buttons clickable or not
             clickCounter.IsEnabled = true;
             game1Starter.IsEnabled = false;
 
@@ -39,19 +36,21 @@ namespace App1
             label1.Text = "Times Clicked : " + counter;
             label2.Text = "";
 
-
-
-            //this means when the game1 starter button is clicked, a timer for 10 seconds initiates.
-            Device.StartTimer(new TimeSpan(0, 0, 10), Timer);
+            //this means when the game1 starter button is clicked, a timer for 5 seconds initiates.
+            Device.StartTimer(new TimeSpan(0, 0, 5), Timer);
 
         }
         private bool Timer()
         {
-            label2.Text = "You Clicked the button " + counter + " times in 10 seconds";
+            double division;
+            division = counter / 5;
+            label2.Text = "You Clicked the button " + counter + " times in 5 seconds";
+            label3.Text = "That's approximately "+ division +" times per second!";
             clickCounter.IsEnabled = false;
-            game1Starter.IsEnabled = false;
+            game1Starter.IsEnabled = true;
             return true;
             //after 10 seconds, the button for click counter becomes unclickable.
+
         }
         
 
@@ -60,32 +59,13 @@ namespace App1
             
             //when the click counter main button is clicked, this will activate the timer
             counter++;
-
             label1.Text = "Times Clicked : " + counter;
-           
-            /*
-            if (counter == 20)
-            {
-                //if you click 20 times, the button disables itself and displays how long it took you
-                //you to click 20 times.
-
-                clickCounter.IsEnabled = false;
-                label2.Text = "You Clicked the button " + counter + " times in 10 seconds";
-
-            }
-            */
-            
-        }
-        
-
-        private void homePage_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new MainPage());
+      
         }
 
         private void Game1Rules_Clicked(object sender, EventArgs e)
         {
-            //this is to navigate to the second game page
+            //this is to navigate to the first games rule page
             Navigation.PushAsync(new Game1Rules());
 
         }
