@@ -1,12 +1,36 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Game3Rules">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ContentPage.Resources>
+        <!-- CSS for page -->
+        <StyleSheet>
+
+            ^contentpage {  
+       background-color: white;  
+     }  
+   
+     #lblTitle {
+            font-family: Consolas;
+            font-style: bold;
+            font-size: medium;
+     }
+        </StyleSheet>
+    </ContentPage.Resources>
+
+    <StackLayout>
+
+        <Label x:Name="lblTitle" Text="Game 3 Rules" 
+               HorizontalOptions="Center" />
+
+        <Editor Text="This game is a reflex game. 
+You have to click the Click Now button and then
+click the Ready Up button and hover the
+mouse over the Get Ready text that appears. 
+When the button appears click it as fast as you can!"
+                    BackgroundColor="#84d3b3" HeightRequest="400"
+                    Margin="250, 100, 250, 100"/>
+        
+    </StackLayout>
+
 </ContentPage>
