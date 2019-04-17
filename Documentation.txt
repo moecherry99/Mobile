@@ -52,4 +52,6 @@ Cut off point for wiki documentation page
 
 UI needs to be fixed a little and code needs to be uploaded to github by midnight. Do 1 hour before in case of crash/errors.
 
+17th April 22:12pm - Code all updated into Github. Cloning and testing app on different machine to check all functionality is correct.
+
 
