@@ -1,12 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Game1Rules">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ContentPage.Resources>
+        <!-- CSS for page -->
+        <StyleSheet>
+
+            ^contentpage {  
+       background-color: white;  
+     }  
+   
+     #lblTitle {
+            font-family: Consolas;
+            font-style: bold;
+            font-size: medium;
+     }
+        </StyleSheet>
+    </ContentPage.Resources>
+    
+    <StackLayout>
+        
+        <Label x:Name="lblTitle" Text="Game 1 Rules" 
+               HorizontalOptions="Center" />
+        
+            <Editor Text="This game is a click counter. 
+You have to click the Start Game 1 button and then quickly start
+clicking the Click Fast button. You have 5 seconds to click as much
+times as you can!"
+                    BackgroundColor="#84d3b3" HeightRequest="400"
+                    Margin="250, 100, 250, 100"/>
         </StackLayout>
-    </ContentPage.Content>
+    
 </ContentPage>
