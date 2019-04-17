@@ -40,4 +40,6 @@ Remaining work is UI/CSS Styling and finish up Wiki pages and the Rules pages te
 17th April 17:18pm - Tested out code on 2017 VS as project was developed on 2019 version. Working correctly. Creating 
 test plan/cases document.
 
+17th April 17:46pm - Rules pages have been updated. Some UI looks nicer and code will be added to Github.
+
 
