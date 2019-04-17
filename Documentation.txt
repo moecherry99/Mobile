@@ -32,3 +32,5 @@ UI, Rules pages text, ReadMe and Wiki left to update for last day (17th April 23
 
 16th April 23:53pm - Added function on page 1 game to show button taps per second.
 
+17th April 13:10pm - Bug fixes. Game page 3's extra button has been fixed.
+
