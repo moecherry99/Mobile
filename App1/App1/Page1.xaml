@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Page1">
     <ContentPage.Resources>
+        <!-- CSS for page -->
         <StyleSheet>
 
         ^contentpage 
@@ -18,6 +19,8 @@
             
         </StyleSheet>
     </ContentPage.Resources>
+
+    <!-- Grid Creation -->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -25,6 +28,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
+        <!-- Title for page -->
         <Label x:Name="lblTitle" Text="Speed Game!" 
                HorizontalOptions="Center" Grid.Row="0" />
 
@@ -37,7 +41,8 @@
             </StackLayout>
 
         </StackLayout>
-        
+
+        <!-- Main area for buttons and labels -->
         <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
                      HorizontalOptions="Center"
                      Orientation="Vertical">
