@@ -34,5 +34,6 @@ UI, Rules pages text, ReadMe and Wiki left to update for last day (17th April 23
 
 17th April 13:10pm - Bug fixes. Game page 3's extra button has been fixed.
 
-17th April 14:03pm - ReadMe fully updated, comments added into code, Wiki pages have all been added. Remaining work is UI/CSS Styling and finish up Wiki pages and the Rules pages text.
+17th April 14:03pm - ReadMe fully updated, comments added into code, Wiki pages have all been added. 
+Remaining work is UI/CSS Styling and finish up Wiki pages and the Rules pages text.
 
