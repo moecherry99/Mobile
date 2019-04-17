@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Page2">
     <ContentPage.Resources>
+        <!-- CSS for page -->
         <StyleSheet>
 
         ^contentpage 
@@ -18,6 +19,8 @@
 
         </StyleSheet>
     </ContentPage.Resources>
+
+    <!-- Grid Creation -->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -25,19 +28,26 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         
+        <!-- Title for page -->
         <Label x:Name="lblTitle" Text="Accuracy Game!" 
                  HorizontalOptions="Center" Grid.Row="0" />
 
+           <!-- Stack Layout for suitable UI -->
         <StackLayout x:Name="slUserEntry" Grid.Row="1" >
+            
             <StackLayout Orientation="Vertical" 
                          HorizontalOptions="Center" 
                          Margin="0, 6, 0, 3">
 
             </StackLayout>
+            
         </StackLayout>
+        
+        <!-- Main area for buttons and labels -->
         <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
                      HorizontalOptions="Center"
                      Orientation="Vertical">
+            
             <Button x:Name="game2Starter" Text="Start Game 2"
                Margin="3, 2"
                Clicked="Game2Starter_Clicked" IsEnabled="True"/>
@@ -59,7 +69,8 @@
                HorizontalOptions="Center" />
 
         </StackLayout>
-        
+
+        <!-- Display Rules for Game 2 -->
         <Button x:Name="game2Rules" Text="Rules"
                Margin="10, 10, 10, 10" HorizontalOptions="End" VerticalOptions="Start"
                Clicked="Game2Rules_Clicked" IsEnabled="True"/>
