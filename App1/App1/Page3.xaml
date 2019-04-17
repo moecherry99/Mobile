@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Page3">
     <ContentPage.Resources>
+        <!-- CSS for page -->
         <StyleSheet>
 
         ^contentpage 
@@ -18,13 +19,16 @@
             
         </StyleSheet>
     </ContentPage.Resources>
+
+    <!-- Grid Creation -->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        
+
+        <!-- Title for page -->
         <Label x:Name="lblTitle" Text="Reflex Game!" 
                HorizontalOptions="Center" Grid.Row="0" />
 
@@ -34,19 +38,26 @@
                          Margin="0, 6, 0, 3">
             </StackLayout>
         </StackLayout>
-            <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
+
+        <!-- Main area for buttons and labels -->
+        <StackLayout x:Name="StackLayoutButtons" Grid.Row="2"
                      HorizontalOptions="Center"
                      Orientation="Vertical">
+                
             <Button x:Name="startButton" Text="Ready Up!"
                Margin="3, 2" 
-               Clicked="startButton_Clicked" IsEnabled="True"/>
+               Clicked="startButton_Clicked" IsEnabled="False"/>
+                
             <Button x:Name="stopButton" Text="Click Now!"
                Margin="3, 2"
                Clicked="stopButton_Clicked" IsEnabled="True"/>
 
             <Label x:Name="statusText" Text="" 
                HorizontalOptions="Center"/>
+                
         </StackLayout>
+
+        <!-- Display Rules for Game 3 -->
         <Button x:Name="game3Rules" Text="Rules"
                Margin="10, 10, 10, 10" HorizontalOptions="End" VerticalOptions="Start"
                Clicked="Game3Rules_Clicked" IsEnabled="True"/>
